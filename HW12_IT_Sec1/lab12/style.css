@@ -1,0 +1,41 @@
+body {
+    background-image: url("halo.jpg");
+    background-repeat: repeat;
+    background-size: 200px;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.images {
+    text-align: center;
+}
+
+.images img {
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.img1 {
+    opacity: 0.2;
+}
+
+.img2 {
+    opacity: 0.4;
+}
+
+.img3 {
+    opacity: 0.6;
+}
+
+.img4 {
+    opacity: 1;
+}
+
+.images img:hover {
+    opacity: 1;
+}
