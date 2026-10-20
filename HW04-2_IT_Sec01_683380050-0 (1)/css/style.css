@@ -1,0 +1,218 @@
+/* นำเข้าฟอนต์จาก Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* รีเซ็ตค่าเริ่มต้นของทุก Element */
+* {
+  margin: 0; /* ลบระยะขอบภายนอกทั้งหมด */
+  padding: 0; /* ลบระยะขอบภายในทั้งหมด */
+  box-sizing: border-box; /* ให้ width และ height รวม padding กับ border */
+}
+
+/* กำหนดค่าพื้นฐานของหน้าเว็บ */
+body {
+  padding-top: 60px; /* เว้นพื้นที่ด้านบน 60px เพื่อไม่ให้ Header บังเนื้อหา */
+  background-color: #e0e0e0; /* กำหนดสีพื้นหลังของเว็บ */
+}
+
+/* ส่วน Header ด้านบน */
+.header {
+  font-family: "Mitr", sans-serif; /* ใช้ฟอนต์ Mitr */
+  font-weight: 600; /* ความหนาของตัวอักษร */
+  font-style: normal; /* ตัวอักษรปกติ */
+  position: fixed; /* ทำให้ Header ติดอยู่ด้านบนตลอดเวลา */
+  top: 0; /* ชิดด้านบน */
+  left: 0; /* ชิดด้านซ้าย */
+  width: 100%; /* กว้างเต็มหน้าจอ */
+  padding: 0 5%; /* เว้นซ้ายและขวา 5% */
+  height: 60px; /* ความสูง Header */
+  background: linear-gradient(to right, #223a3a, #456b6b); /* ไล่สีพื้นหลัง */
+  display: flex; /* ใช้ Flexbox */
+  justify-content: space-between; /* กระจายเนื้อหาซ้าย-ขวา */
+  align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* เงาด้านล่าง */
+  z-index: 9999; /* ให้อยู่บนสุดของทุก Element */
+}
+
+/* ลิงก์ภายใน Header */
+.header a {
+  color: white;
+  text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
+}
+
+/* กำหนดรูปแบบของข้อความ p ทั้งเว็บ */
+p {
+  font-family: "Mitr", sans-serif; /* ใช้ฟอนต์ Mitr */
+  font-weight: 300; /* ตัวอักษรบาง */
+  font-style: normal; /* ตัวอักษรปกติ */
+}
+
+/* ปุ่มภายใน Header */
+.header button {
+  font-family: "Mitr", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 6px; /* ระยะห่างภายในปุ่ม */
+  border-radius: 10px; /* มุมโค้ง */
+  border: none; /* ไม่มีเส้นขอบ */
+  cursor: pointer; /* เปลี่ยนเมาส์เป็นรูปมือ */
+}
+
+/* เมื่อเอาเมาส์ชี้ปุ่ม */
+.header button:hover {
+  transition: 0.5s; /* ทำ Animation 0.5 วินาที */
+  color: white; /* เปลี่ยนสีตัวอักษรเป็นขาว */
+  border: white solid; /* เพิ่มเส้นขอบสีขาว */
+  background: none; /* พื้นหลังโปร่งใส */
+}
+
+/* กล่องหลักที่ครอบ Left และ Right */
+.wrapper {
+  display: flex; /* ใช้ Flexbox */
+  width: 100%;
+  padding: 20px 5%; /* เว้นขอบซ้ายขวา 5% และบนล่าง 20px */
+  gap: 20px; /* ระยะห่างระหว่างกล่อง */
+  align-items: flex-start; /* จัดให้อยู่ด้านบน */
+}
+
+/* กล่องด้านซ้าย */
+.left-box {
+  flex: 0 9 200px; /* Flex: ไม่ขยาย, ย่อได้, ขนาดเริ่มต้น 200px */
+  background-color: #f0f0f0; /* สีพื้นหลัง */
+  padding: 0 10px 10px; /* เว้นด้านซ้ายขวา 10px และล่าง 10px */
+  border-radius: 8px; /* มุมโค้ง */
+  display: flex; /* ใช้ Flexbox */
+  flex-direction: column; /* เรียงจากบนลงล่าง */
+  align-items: center; /* จัดกึ่งกลางแนวนอน */
+  position: sticky; /* เลื่อนตามหน้าจอเมื่อ Scroll */
+  top: 68px; /* หยุดใต้ Header */
+  z-index: 10; /* อยู่ใต้ Header */
+  box-shadow: 0 4px 12px rgb(0, 0, 0, 0.1); /* เพิ่มเงา */
+}
+
+/* รูปภาพในกล่องซ้าย */
+.left-box img {
+  margin: 20px 0px 6px; /* ระยะห่างรอบรูป */
+  width: 150px; /* ความกว้างรูป */
+  border-radius: 3px; /* มุมโค้ง */
+}
+
+/* เมื่อเอาเมาส์ชี้รูป */
+.left-box img:hover {
+  transition: 0.3s; /* Animation 0.3 วินาที */
+  transform: scale(1.05); /* ขยายรูป 5% */
+}
+
+/* ข้อความในกล่องซ้าย */
+.left-box p {
+  padding: 0 14px 10px; /* ระยะห่างภายใน */
+  font-size: 10px; /* ขนาดตัวอักษร */
+}
+
+/* หัวข้อ h5 */
+.left-box h5 {
+  font-family: "Mitr", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 10px 0px 0px; /* ระยะห่างด้านบน */
+  color: red;
+}
+
+/* ลิงก์ในกล่องซ้าย */
+.left-box a {
+  color: #223a3a;
+}
+
+/* เมื่อเอาเมาส์ชี้ลิงก์ */
+.left-box a:hover {
+  color: brown; /* เปลี่ยนเป็นสีน้ำตาล */
+}
+
+/* กล่องด้านขวา */
+.right-box {
+  padding: 40px;
+  display: flex;
+  flex-direction: column; /* เรียงแนวตั้ง */
+  align-items: flex-start; /* จัด element ภายในให้ชิดซ้าย */
+  flex: 2; /* กว้างเป็น 2 ส่วน */
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0, 0, 0, 0.1); /* เงา */
+}
+
+/* รูปภาพในกล่องขวา */
+.right-box img {
+  margin: 20px 0px 20px; /* ระยะห่างบนล่าง */
+  width: 100%;
+  max-width: 750px; /* กว้างสูงสุด 750px */
+  height: auto; /* ปรับความสูงอัตโนมัติ */
+  border-radius: 3px;
+  align-self: center; /* จัดรูปภาพให้อยุ่ตรงกลาง */
+}
+
+/* หัวข้อหลัก */
+.right-box h1 {
+  font-family: "Mitr", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* หัวข้อรอง */
+.right-box h2 {
+  font-family: "Mitr", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  align-self: flex-start; /* ชิดซ้าย */
+  margin: 20px 0px 20px; /* ระยะห่างบนล่าง */
+}
+
+/* รูปขนาดพิเศษแบบที่ 1 */
+.right-box .imgg {
+  margin: 20px 0px 20px;
+  width: 500px;
+  height: 500px;
+}
+
+/* รูปขนาดพิเศษแบบที่ 2 */
+.right-box .imgg2 {
+  margin: 20px 0px 20px;
+  width: 500px;
+  height: 600px;
+}
+
+/* รูปขนาดพิเศษแบบที่ 3 */
+.right-box .imgg3 {
+  margin: 20px 0px 20px;
+  width: 500px;
+  height: 700px;
+}
+
+/* รูปขนาดพิเศษแบบที่ 4 */
+.right-box .imgg4 {
+  margin: 20px 0px 20px;
+  width: 500px;
+  height: 800px;
+}
+
+.right-box ul {
+  list-style-position: inside; /* ให้จุด Bullet อยู่ภายในกรอบของรายการ */
+  padding-left: 0; /* ลบระยะห่างด้านซ้ายภายในของ ul */
+  margin-left: 0; /* ลบระยะห่างด้านซ้ายภายนอกของ ul */
+}
+
+li {
+  font-family: "Mitr", sans-serif; 
+  font-weight: 300; 
+  font-style: normal;
+}
+
+/* Footer ด้านล่าง */
+.footer {
+  display: flex; /* ใช้ Flexbox */
+  justify-content: center; /* จัดกึ่งกลางแนวนอน */
+  align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+  color: white;
+  background: linear-gradient(to right, #223a3a, #456b6b);
+  box-shadow: 0 -4px 12px rgb(0, 0, 0, 0.15); /* เงาด้านบน */
+  width: 100%; /* กว้างเต็มหน้าจอ */
+  height: 60px; /* ความสูง Footer */
+}

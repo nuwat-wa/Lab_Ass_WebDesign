@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mitr:wght@200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mitr", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7f2;
+  color: #173b2c;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+}
+
+header {
+  height: 76px;
+  padding: 0 7%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* จัดเรียงโดยให้ตัวแรกอยู่ต้น และตัวสุดท้ายอยู่ท้าย */
+  border-bottom: 1px solid #e3e9e2;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #26734d;
+}
+
+.logo span {
+  color: #80a65b;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 35px;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #26734d;
+}
+
+.login {
+  background: #26734d;
+  color: white;
+  padding: 11px 22px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+.hamburger {
+  display: none;
+  font-size: 27px;
+}
+
+.hero {
+  min-height: 480px;
+  padding: 70px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(100deg, #e7f3e5, #f8f5df); /* กำหนดพื้นหลังเป็นสีไล่ระดับจากซ้ายไปขวา */
+}
+
+.hero-text {
+  width: 48%;
+}
+
+.small-title {
+  color: #56834e;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 55px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.hero h1 span {
+  color: #5b9347;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #496052;
+  max-width: 600px;
+  margin-bottom: 28px;
+}
+
+.button {
+  display: inline-block;
+  background: #26734d;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.hero-graphic {
+  width: 43%;
+  height: 330px;
+  background: #d3e7c9;
+  border-radius: 45% 45% 20% 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.circle img {
+    width: 500px;
+}
+
+.content {
+  padding: 70px 7%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title small {
+  color: #639051;
+  font-weight: 500;
+}
+
+.section-title h2 {
+  font-size: 34px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.section-title p {
+  color: #65756c;
+  margin-top: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  min-height: 210px;
+  padding: 28px;
+  border-radius: 18px;
+  background: white;
+  border: 1px solid #e2e9df;
+  position: relative;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(40, 80, 50, 0.1);
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  background: #e5f2df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.card p {
+  color: #6b776f;
+  line-height: 1.6;
+  font-size: 14px;
+  padding-right: 45px;
+}
+
+.arrow {
+  position: absolute;
+  right: 25px;
+  bottom: 22px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #26734d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background: #123b2c;
+  color: white;
+}
+
+.copyright {
+  padding: 25px;
+  font-size: 16px;
+  text-align: center;
+  color: #a9beb2;
+}
+
+
+@media (min-width: 377px) and (max-width: 1200px) {
+  /* เปลี่ยน Header */
+   /* Header Navigation เป็น Hamburger */
+  header {
+    height: 65px;
+    padding: 0 20px;
+  }
+
+  nav,
+  .login {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .login {
+    padding: 9px 15px;
+    font-size: 13px;
+  }
+
+  /* เปลี่ยน Hero จากซ้าย-ขวา เป็นบน-ล่าง */
+  .hero {
+    padding: 50px 5%;
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-graphic {
+    width: 80%;
+    height: 260px;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+  .circle img {
+    width: 400px;
+}
+
+  /* เปลี่ยน Card จาก 3 คอลัมน์เป็น 2 คอลัมน์ */
+  .content {
+    padding: 55px 5%;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 376px) {
+  header {
+    height: 65px;
+    padding: 0 20px;
+  }
+
+  nav,
+  .login {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .logo {
+    font-size: 21px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 40px 20px;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .small-title {
+    font-size: 11px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .circle img {
+    width: 270px;
+}
+
+  .button {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+
+  .hero-graphic {
+    width: 100%;
+    height: 220px;
+    border-radius: 25px;
+  }
+
+  .circle {
+    width: 105px;
+    height: 105px;
+    font-size: 14px;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 9px 18px;
+  }
+
+  /* Card 2 คอลัมน์เป็น 1 คอลัมน์ */
+  .content {
+    padding: 45px 20px;
+  }
+
+  .section-title {
+    margin-bottom: 25px;
+  }
+
+  .section-title h2 {
+    font-size: 25px;
+  }
+
+  .section-title p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    min-height: 170px;
+    padding: 22px;
+  }
+
+  .card h3 {
+    font-size: 17px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  /* Footer หลายคอลัมน์เป็น 1 คอลัมน์ */
+  footer {
+    padding: 35px 20px 15px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}

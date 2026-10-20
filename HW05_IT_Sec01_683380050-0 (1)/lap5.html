@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phanuwat</title>
+
+    <style>
+      body {
+        background-color: azure; /* กำหนดสีพื้นหลังของหน้าเว็บเป็นสี Azure */
+        font-family: sans-serif; /* กำหนดแบบอักษรทั้งหมดให้เป็น Sans-serif */
+      }
+
+      .test1 {
+        color: cadetblue; /* กำหนดสีข้อความเป็น CadetBlue */
+        font-weight: bold; /* ทำให้ข้อความเป็นตัวหนา */
+        text-decoration: underline dashed; /* ขีดเส้นใต้แบบเส้นประ */
+      }
+
+      .test1:hover {
+        text-shadow: 5px 1px 10px yellow; /* เพิ่มเงาสีเหลืองให้ข้อความเมื่อเมาส์ชี้ */
+        font-size: larger; /* ขยายขนาดตัวอักษรให้ใหญ่ขึ้น */
+        transition: 1.5s; /* กำหนดให้เอฟเฟกต์เปลี่ยนแปลงใช้เวลา 1.5 วินาที */
+      }
+
+      .test2 {
+        white-space: nowrap; /* ไม่ให้ข้อความขึ้นบรรทัดใหม่ */
+        width: 200px; /* กำหนดความกว้างของกล่องเป็น 200px */
+        border: 5px solid darkblue; /* สร้างเส้นขอบหนา 5px สี DarkBlue */
+        overflow: hidden; /* ซ่อนข้อความที่เกินขนาดกล่อง */
+        text-overflow: ellipsis; /* แสดง ... เมื่อข้อความยาวเกินพื้นที่ */
+      }
+
+      .test3 {
+        line-height: 20px; /* กำหนดระยะห่างระหว่างบรรทัดเป็น 20px */
+        text-indent: 45px; /* ย่อหน้าแรกเข้ามา 45px */
+      }
+
+      .test3::first-letter {
+        background-color: red; /* กำหนดพื้นหลังของตัวอักษรตัวแรกเป็นสีแดง */
+        color: white; /* กำหนดสีตัวอักษรตัวแรกเป็นสีขาว */
+        font-size: 25px; /* กำหนดขนาดตัวอักษรตัวแรกเป็น 25px */
+        font-style: italic; /* ทำให้ตัวอักษรตัวแรกเป็นตัวเอียง */
+      }
+
+      .test3::first-line {
+        text-transform: uppercase; /* เปลี่ยนตัวอักษรในบรรทัดแรกเป็นตัวพิมพ์ใหญ่ */
+        background-color: yellow; /* กำหนดพื้นหลังของบรรทัดแรกเป็นสีเหลือง */
+        font-weight: bold; /* ทำให้ข้อความในบรรทัดแรกเป็นตัวหนา */
+      }
+
+      .test4 {
+        height: 100px; /* กำหนดความสูงของกล่องเป็น 100px */
+        width: 400px; /* กำหนดความกว้างของกล่องเป็น 400px */
+        overflow: scroll; /* แสดงแถบเลื่อนเมื่อเนื้อหาเกินขนาดกล่อง */
+      }
+      
+    </style>
+  </head>
+  <body>
+    <p class="test1">Lab 5 - CSS Font</p>
+
+    <p class="test2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum est
+      recusandae quae magni, odit quam reiciendis, esse delectus tempora ex fuga
+      architecto velit cum explicabo accusantium mollitia voluptatem ad.
+      Reiciendis ad minima rerum impedit, velit, adipisci voluptates quibusdam
+      id modi sed neque. Error atque enim porro sequi excepturi fugiat minima.
+    </p>
+
+    <p class="test3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut
+      facere dolore est laborum perferendis cum magni. Eligendi optio pariatur
+      at veniam aperiam quam in architecto veritatis enim! Ab dolores sit
+      tempore aut cumque corrupti temporibus accusamus in iure, consequatur
+      mollitia, perferendis rerum dignissimos cum aliquid eaque! Molestiae ex
+      expedita dignissimos perspiciatis voluptatem, hic sint facilis assumenda
+      qui at quibusdam blanditiis necessitatibus voluptate nihil. Maxime
+      voluptas eaque quae eos corporis iusto recusandae dolorum unde cumque?
+      Quas quisquam dolorum facere qui quibusdam, facilis fugiat a cumque
+      doloribus. Vero voluptatum iure maiores obcaecati, id dolores sit quam
+      quis velit asperiores natus dicta. Nemo, ut assumenda! Voluptatum fuga
+      saepe consequuntur quis quia mollitia nihil natus iusto officiis alias
+      tempora illum, aliquid enim quas eveniet, animi dolor vitae dolore id.
+      Perspiciatis quasi repudiandae voluptates voluptatibus, dolor deserunt,
+      vitae ducimus corporis unde beatae nostrum esse. Molestias similique optio
+      nihil nesciunt necessitatibus? Ipsam quo placeat quas, incidunt tempora
+      obcaecati ut nam porro velit doloribus perferendis? Accusantium corrupti
+      dolorum minima nobis sit debitis iste laboriosam id nulla eligendi
+      voluptates assumenda, culpa magni, animi nemo earum officiis alias fuga
+      ducimus ut commodi officia. Officia ducimus fugit ab eos odit iste sequi,
+      accusamus facilis tempora, natus delectus odio aspernatur!
+    </p>
+
+    <div class="test4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia
+      earum a fuga ab cum accusantium consequuntur. Fugiat recusandae adipisci
+      laboriosam doloremque sed hic ducimus dignissimos obcaecati, facilis nemo
+      repellendus itaque molestias assumenda veritatis sapiente totam deserunt
+      repudiandae enim accusamus rerum ipsum. Minima in, velit ratione tempore
+      tenetur quasi quidem sint laudantium ut qui temporibus excepturi, sapiente
+      nisi a eaque nostrum maiores quo nulla minus, voluptate ex deserunt eius?
+      Voluptatem quis velit aut, officiis ab ipsam minima nulla doloribus
+      corrupti dolorem eligendi id harum obcaecati praesentium ullam sed
+      reprehenderit, laboriosam aliquid libero vel architecto? Quidem aut ad
+      sequi aliquam velit!
+    </div>
+  </body>
+</html>

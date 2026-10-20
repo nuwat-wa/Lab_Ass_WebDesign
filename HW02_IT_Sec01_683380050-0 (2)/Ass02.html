@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        background-color: rgb(235, 235, 235);
+        overflow-x: hidden;
+      }
+
+      header {
+        background-color: #875a3c;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      nav ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        padding: 0.5rem 0.5rem;
+        padding: 0.8rem 0.5rem;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .sec1 {
+        padding: 2rem;
+        background-color: white;
+        box-shadow:
+          0px -4px 7px rgba(0, 0, 0, 0.1),
+          0px 4px 7px rgba(0, 0, 0, 0.1);
+          width: 100%;
+      }
+
+      .sec2 {
+        margin: 1rem 0rem;
+        padding: 2rem;
+        background-color: white;
+        box-shadow:
+          0px -4px 7px rgba(0, 0, 0, 0.1),
+          0px 4px 7px rgba(0, 0, 0, 0.1);
+          width: 100%;
+      }
+
+      section h2 {
+        padding: 1rem 0rem;
+      }
+
+      .myCanvas {
+        border: 2px solid;
+      }
+
+      article {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        align-items: flex-start;
+      }
+
+      .right {
+        margin-top: -1.3rem;
+      }
+
+      footer {
+        background-color: #875a3c;
+        color: white;
+        padding: 1.5rem;
+        text-align: center;
+      }
+
+      img {
+        width: 600px;
+      }
+
+      .sec2 .right {
+        background-color: antiquewhite;
+        padding: 1.4rem;
+        margin: 0rem 4rem;
+        margin-top: 5.3rem;
+        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
+        white-space: nowrap;
+        width: 50rem;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Aassignment #2</h2>
+      <p>Learning HTML5</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu1</a></li>
+        <li><a href="#">Menu2</a></li>
+        <li><a href="#">Menu3</a></li>
+      </ul>
+    </nav>
+
+    <section class="sec1">
+      <h2>Video</h2>
+
+      <article>
+        <div class="left">
+          <video controls >
+            <source src="video/video_for_ass2.mp4" type="video/mp4" />
+            <source src="video/video_for_ass2.mp4" type="video/webm" />
+            วิดีโอของคุณไม่รองรับในบราวเซอร์นี้
+          </video>
+          <p>
+            HTML5 introduces semantic elements, multimedia support, and Canvas
+            for graphics.
+          </p>
+        </div>
+
+        <div class="right">
+          <h2>Canvas</h2>
+          <canvas class="myCanvas"></canvas>
+        </div>
+      </article>
+    </section>
+
+    <section class="sec2">
+      <article>
+        <div class="left">
+          <h2>Image</h2>
+          <img src="img/image_for_ass2.jpg" alt="#" />
+        </div>
+
+        <div class="right">
+          <h3>HTML5</h3>
+          <br />
+          <p>
+            HTML5 is the latest version of the Hypertext Markup Language, which
+            is used to structure and present content on the web.
+          </p>
+          <br>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>683380050-0 Phanuwat Watreeboonrueang section1</p>
+      <p>Copyright &copy 2026</p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,21 @@
+
+.box1,
+.box2,
+.box3 {
+  width: 180px;
+  margin: 10px;
+  padding: 10px;
+  float: left;
+}
+
+.box1 {
+  border: 10px solid RGB(255, 86, 86);
+}
+
+.box2 {
+  border: 10px inset red;
+}
+
+.box3 {
+  border: 10px double BLUEVIOLET;
+}

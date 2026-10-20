@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+    background-color: pink;
+    color: yellow;
+    padding: 30px;
+    font-weight: 600;
+    font-size: 30px;
+    border-bottom: 8px dashed blue;
+}
+
+ul {
+    background-color: #f1f1f1;
+    width: 200px;
+    list-style: none;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: black;
+}
+
+a:hover {
+    background-color: yellow;
+    color: green;
+}

@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+header {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: yellow;
+  width: 20%;
+  height: 200px;
+  padding: 20px;
+  float: left;
+}
+
+section {
+  background-color: lightgray;
+  width: 60%;
+  height: 200px;
+  padding: 20px;
+  float: left;
+}
+
+section header {
+  background-color: gray;
+  padding: 10px;
+  color: white;
+}
+
+section article {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section footer {
+  background-color: gray;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+aside {
+  background-color: lightblue;
+  width: 20%;
+  height: 200px;
+  padding: 20px;
+  float: left;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  clear: both;
+  padding: 15px;
+}

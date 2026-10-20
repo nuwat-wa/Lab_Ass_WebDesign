@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="400"
+      height="120"
+      style="border: 1px solid"
+    ></canvas>
+    <canvas
+      id="fla"
+      width="300"
+      height="120"
+      style="border: 1px solid"
+    ></canvas>
+  </body>
+  <script>
+    var display = document.getElementById("myCanvas");
+    var ctx = display.getContext("2d");
+
+    ctx.fillStyle = "red";
+    ctx.fillRect(0, 0, 400, 30);
+
+    ctx.fillStyle = "orange";
+    ctx.fillRect(0, 20, 400, 30);
+
+    ctx.fillStyle = "yellow";
+    ctx.fillRect(0, 40, 400, 30);
+
+    ctx.fillStyle = "green";
+    ctx.fillRect(0, 60, 400, 30);
+
+    ctx.fillStyle = "blue";
+    ctx.fillRect(0, 80, 400, 30);
+
+    ctx.fillStyle = "purple";
+    ctx.fillRect(0, 100, 400, 30);
+
+    var display = document.getElementById("fla");
+    var ctx = display.getContext("2d");
+
+    ctx.fillStyle = "red";
+    ctx.fillRect(0, 0, 300, 120);
+
+    ctx.fillStyle = "white";
+    ctx.fillRect(110, 0, 20, 120);
+
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 50, 400, 20);
+  </script>
+  <img src="img/ttt.jpg" alt="HTML5" style="width: 600px; display: flex" />
+</html>

@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans Thai", sans-serif;
+  font-optical-sizing: auto;
+  background: #edf2f7;
+  color: #172033;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+.form-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(15, 35, 65, 0.15);
+  display: grid;
+  grid-template-columns: 290px 1fr;
+}
+
+.intro {
+  background: #102a43;
+  color: #ffffff;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro h1 {
+  margin: 0 0 18px;
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.intro p {
+  margin: 0;
+  color: #cbd7e6;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.intro-box {
+  margin-top: 35px;
+  padding: 18px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.intro-box strong {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+
+.intro-box span {
+  color: #cbd7e6;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.intro-footer {
+  color: #9fb2c9;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.form-content {
+  padding: 42px 45px;
+}
+
+.form-title {
+  margin-bottom: 30px;
+}
+
+.form-title h2 {
+  margin: 0 0 7px;
+  color: #102a43;
+  font-size: 30px;
+}
+
+.form-title p {
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.section-title {
+  margin: 28px 0 17px;
+  padding-bottom: 9px;
+  color: #102a43;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #dce3eb;
+}
+
+.section-title:first-of-type {
+  margin-top: 0;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* แบ่งคอลัมน์ออกเป็น 2 ส่วน */
+  gap: 18px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  color: #26384d;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.required {
+  color: #c53030;
+}
+
+/* กำหนดรูปแบบพื้นฐานให้ช่องกรอกข้อมูลและช่องเลือก */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="tel"],
+select {
+  width: 100%;
+  height: 44px;
+  padding: 0 13px;
+  border: 1px solid #c7d1dc;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #172033;
+  font-size: 14px;
+  outline: none;
+}
+
+/* กำหนดสีของข้อความตัวอย่างในช่องกรอกข้อมูล */
+input::placeholder {
+  color: #9aa7b5;
+}
+
+/* กำหนดรูปแบบของช่อง input และ select เมื่อผู้ใช้กำลังเลือกช่อง */
+input:focus,
+select:focus {
+  border-color: #102a43;
+  box-shadow: 0 0 0 3px rgba(16, 42, 67, 0.08);
+}
+
+select {
+  cursor: pointer;
+}
+
+.radio-group {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.radio-option input {
+  width: 17px;
+  height: 17px;
+  accent-color: #102a43;
+}
+
+.phone-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.25fr;
+  gap: 10px;
+}
+
+.phone-group input {
+  text-align: center;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 11px;
+  border: 1px dashed #aebdcb;
+  border-radius: 7px;
+  background: #f7f9fb;
+  color: #526274;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.submit-area {
+  margin-top: 30px;
+  padding-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #dce3eb;
+}
+
+button {
+  border: none;
+  border-radius: 7px;
+  background: #102a43;
+  color: #ffffff;
+  padding: 13px 38px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Noto Sans Thai", sans-serif;
+  font-optical-sizing: auto;
+}
+
+button:hover {
+  background: #0b1f33;
+}

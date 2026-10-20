@@ -1,0 +1,213 @@
+/* นำเข้าฟอนต์ Prompt จาก Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* รีเซ็ตค่าเริ่มต้นของทุก Element */
+* {
+  margin: 0; /* ลบระยะห่างด้านนอก */
+  padding: 0; /* ลบระยะห่างด้านใน */
+  box-sizing: border-box; /* รวม padding และ border ไว้ในขนาดของ Element */
+}
+
+body {
+  color: white; /* กำหนดสีตัวอักษรเป็นสีขาว */
+  background-color: #010b26; /* สีพื้นหลังหลักของเว็บไซต์ */
+  font-family: "Prompt", sans-serif; /* ใช้ฟอนต์ Prompt หากไม่มีให้ใช้ sans-serif */
+  font-weight: 500; /* ความหนาของตัวอักษร */
+  font-style: normal; /* ใช้ตัวอักษรแบบปกติ */
+  overflow-y: auto; /* แสดง Scroll แนวตั้งเมื่อจำเป็น */
+  overflow-x: hidden; /* ซ่อน Scroll แนวนอน */
+
+  /* เพิ่มพื้นหลังแบบ Gradient วงกลมสี*/
+  background-image:
+    radial-gradient(circle at top right, #7b2ff755, transparent 10%),
+    radial-gradient(circle at left, #00c6ff22, transparent 20%);
+}
+
+.con {
+  margin: 50px 80px 30px; /* ระยะห่าง รอบกล่อง */
+  border: 1px solid #7b2ff766; /* เส้นขอบสีม่วงโปร่งใส */
+  border-radius: 25px; /* มุมโค้ง */
+  background: rgba(255, 255, 255, 0.03); /* พื้นหลังโปร่งใส */
+  backdrop-filter: blur(15px); /* เอฟเฟกต์กระจกฝ้าทำให้พื้นหลังเบลอ */
+}
+
+.container {
+  margin: 20px 80px 30px; /* ระยะห่างรอบ Container */
+  text-align: center; /* จัดข้อความกึ่งกลาง */
+}
+
+hr {
+  border: none; /* ลบเส้นขอบเดิม */
+  height: 1px; /* ความสูงเส้น */
+  background-color: #7b2ff766; /* สีเส้น */
+  opacity: 0.6; /* ความโปร่งใส */
+  margin: 0 50px 0; /* ระยะห่างซ้ายขวา */
+}
+
+h1 {
+  text-align: center; 
+}
+
+/* ข้อความภายใน span ของ h1 */
+h1 span {
+  font-size: 50px; /* ขนาดตัวอักษร */
+  background: linear-gradient(90deg, #6a5cff, #ff3cac); /* ไล่สี */
+  -webkit-background-clip: text; /* ให้ Gradient แสดงเฉพาะตัวอักษร */
+  color: transparent; /* ทำสีตัวอักษรโปร่งใส */
+}
+
+
+p {
+  width: 909px; /* ความกว้างของข้อความ */
+  margin: 0 auto; /* จัดให้อยู่กึ่งกลาง */
+  text-align: left; /* ชิดซ้าย */
+  text-indent: 35px; /* ย่อหน้าแรก */
+  line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+  margin-top: 20px; /* ระยะห่างด้านบน */
+  font-weight: 350; /* ความหนาของตัวอักษร */
+}
+
+
+h3 {
+  width: 909px; 
+  margin: 70px auto 0; /* ระยะห่างด้านบน */
+  text-align: left; 
+}
+
+h2 i,
+h3 i {
+  color: #6a5cff; /* สีไอคอน */
+  border: 1px solid rgba(255, 255, 255, 0.08); /* เส้นขอบ */
+  background: #181c33; /* สีพื้นหลัง */
+  padding: 6px; /* ระยะห่างภายใน */
+  border-radius: 6px; /* มุมโค้ง */
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03), /* เงาด้านใน */
+    0 10px 25px rgba(0, 0, 0, 0.35); /* เงาด้านนอก */
+}
+
+.container4,
+.container8 {
+  width: 909px; 
+  margin: 30px auto; /* จัดกึ่งกลาง */
+  padding: 20px 40px; /* ระยะห่างด้านใน */
+  border: 1px solid #7b2ff766; 
+  border-radius: 25px; 
+  background: rgba(255, 255, 255, 0.03); /* พื้นหลังโปร่งใส */
+  backdrop-filter: blur(15px); /* เอฟเฟกต์เบลอ */
+}
+
+/* กำหนดระยะเยื้องของรายการใน ul */
+.container4 ul {
+  padding-left: 40px;
+}
+
+/* ตัวอย่างขนาดฟอนต์ */
+.xx-small {
+  font-size: xx-small;
+}
+
+.x-small {
+  font-size: x-small;
+}
+
+.small {
+  font-size: small;
+}
+
+.medium {
+  font-size: medium;
+}
+
+.large {
+  font-size: large;
+}
+
+.x-large {
+  font-size: x-large;
+}
+
+.xx-large {
+  font-size: xx-large;
+}
+
+.content {
+  width: 909px; 
+  margin: 0 auto; /* จัดกึ่งกลาง */
+}
+
+.source-btn {
+  display: block; /* แสดงเป็น Block */
+  width: fit-content; /* กว้างตามข้อความ */
+  margin: 20px auto 0 0; /* ชิดซ้าย */
+  padding: 12px 24px; /* ระยะห่างภายใน */
+  background: #00c8ff57; 
+  color: white; 
+  text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
+  border-radius: 10px; 
+  transition: 0.3s; /* เอฟเฟกต์เปลี่ยนค่าตามระยะเวลาที่กำหนด */
+}
+
+.source-btn:hover {
+  background: #00c8ff98; /* เปลี่ยนสีพื้นหลัง */
+  transform: scale(1.1); /* ขยายขนาด */
+}
+
+h2 {
+  width: 909px; 
+  margin: 50px auto 0; 
+  text-align: left; 
+}
+
+.content2 {
+  width: 909px; 
+  margin: 50px auto 0; /* จัดกึ่งกลาง */
+  display: grid; /* ใช้ CSS Grid */
+  grid-template-columns: repeat(3, 1fr); /* 3 คอลัมน์ */
+  gap: 20px; /* ระยะห่างระหว่างรูป */
+}
+
+.card h5 {
+  width: auto; /* กว้างตามเนื้อหา */
+  font-weight: 300; /* ความหนาตัวอักษร */
+  margin: 0 0 12px; /* ระยะห่างด้านล่าง */
+  text-align: center; 
+}
+
+.card img {
+  width: 100%; /* เต็มความกว้างของ Card */
+  height: 220px; /* ความสูง */
+  object-fit: cover; /* ครอปรูปให้พอดี */
+  border-radius: 10px; 
+  transition: 0.3s; 
+}
+
+.card img:hover {
+  transform: scale(1.03); /* ขยายเล็กน้อย */
+}
+
+.content3 p {
+  width: 909px; 
+  margin: 30px auto; 
+  text-align: left; 
+  text-indent: 0; /* ไม่ย่อหน้า */
+}
+
+.content3 a {
+  color: #00c8ff57; 
+}
+
+.content3 a:hover {
+  color: #c9302c; /* เปลี่ยนเป็นสีแดง */
+}
+
+.footer2 {
+  margin-top: 50px; /* ระยะห่างด้านบน */
+  display: flex; /* ใช้ Flexbox เพื่อจัดตำแหน่งและการเรียงตัวขององค์ประกอบ */
+  justify-content: center; /* จัดกึ่งกลางแนวนอน */
+  align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+  color: white; 
+  background-color: #1e2842; 
+  width: 100%; /* กว้างเต็มหน้าจอ */
+  height: 50px; /* ความสูง Footer */
+}

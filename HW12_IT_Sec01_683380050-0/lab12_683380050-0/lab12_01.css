@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+form {
+  border: 1px solid #d3d3d3;
+  padding: 30px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group.align-top {
+  align-items: flex-start;
+}
+
+.form-group > label {
+  width: 140px;
+  font-size: 16px;
+  color: #000;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid #ccc;
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 200px;
+}
+
+textarea {
+  width: 220px;
+  height: 90px;
+  resize: both;
+}
+
+.inline-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.inline-group label {
+  width: auto;
+  margin-right: 4px;
+}
+
+.inline-group input[type="checkbox"],
+.inline-group input[type="radio"] {
+  margin-right: 8px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 6px 12px;
+  background-color: #f0f0f0;
+  border: 1px solid #adadad;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #e0e0e0;
+}

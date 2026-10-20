@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Mitr", sans-serif;
+}
+
+/* ซ่อน Scrollbar ทั้งหมด แต่ยังสามารถ Scroll ได้ */
+html {
+  scrollbar-width: none;
+}
+
+/* ซ่อน Scrollbar สำหรับ Chrome, Edge และ Safari */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  color: white;
+  background: #0f1720;
+}
+
+header {
+  width: 90%;
+  padding: 18px 30px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #243e50;
+  border-radius: 50px;
+}
+
+.logo1 {
+  font-weight: 600;
+  margin: 0px 2%;
+}
+
+.logo1 span {
+  color: #a9dbff;
+}
+
+.navbar {
+  display: flex;
+  margin: 0px 2%;
+  gap: 60px;
+}
+
+.navbar,
+header,
+a {
+  color: white;
+}
+
+.navbar a:hover {
+  color: #5db1ed;
+}
+
+.hero_text {
+  color: white;
+  line-height: 80px;
+}
+
+.detail {
+  line-height: 50px;
+}
+
+.detail button {
+  padding: 9px 30px;
+  border-radius: 50px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+/* ซ่อน checkbox */
+.dropdown input {
+  display: none;
+}
+
+/* ปุ่ม ประเภทรถ */
+.dropdown label {
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+}
+
+.dropdown label:hover {
+  color: #5db1ed;
+}
+
+/* กล่อง dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 220px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #243e50;
+}
+
+/* คลิกแล้วเปิด */
+.dropdown input:checked ~ .dropdown-menu {
+  display: block;
+}
+
+/* รายการระดับ 1 */
+.dropdown-menu > a,
+.main-category {
+  display: block;
+  padding: 14px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+/* ระดับ 2 */
+.sub-category {
+  margin-top: 10px;
+  background: #4a7594;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.sub-category a {
+  display: block;
+  padding: 12px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.sub-category a:hover {
+  background: #74b0da;
+  color: #243e50;
+}
+
+ /* รถแนะนำ */
+    .cars {
+      padding: 80px 9%;
+      text-align: center;
+    }
+
+    .cars h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .cars > p {
+      color: #b8c2ca;
+      margin-bottom: 40px;
+    }
+
+    .car-list {
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .car {
+      width: 30%;
+      background: #243e50;
+      border-radius: 15px;
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .car img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .car-info {
+      padding: 20px;
+    }
+
+    .car-info p {
+      color: #b8c2ca;
+      margin: 8px 0;
+    }
+
+    .price {
+      color: #6da0c2 !important;
+      font-size: 20px;
+      font-weight: bold;
+    }

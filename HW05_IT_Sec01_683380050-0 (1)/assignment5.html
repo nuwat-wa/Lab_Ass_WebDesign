@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phanuwat</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="con">
+      <div class="container">
+        <h1><span>CSS font-size </span>: A Definitive Font-Sizing Guide</h1>
+        <p>
+          Font sizing in CSS sounds as though it should be easy. Until you try
+          it. Many developers use the force; they tinker with the CSS font-size
+          property until it looks right only to find it’s different in another
+          browser. A little understanding can go a long way…
+        </p>
+      </div>
+      <hr>
+
+      <div class="container2">
+        <h3><i class="fa-solid fa-pencil"></i> The font-size Property</h3>
+        <p>
+          The font-size property can be set for any HTML tag (even if it would
+          not normally contain textual content like br). It can be assigned a
+          variety of absolute, relative, or length size parameters. An element
+          will inherit the font-size of its parent unless you override it. This
+          is especially important when you specify relative sizes.
+        </p>
+      </div>
+
+      <div class="container3">
+        <h3>
+          <i class="fa-regular fa-file-word"></i> Absolute Font Sizing Keywords
+        </h3>
+        <p>
+          Several absolute font-sizing keywords are available. The font size is
+          determined from a browser preset and the element will not inherit its
+          parent’s size.
+        </p>
+      </div>
+
+      <div class="container4">
+        <ul>
+          <li class="xx-small">font-size: xx-small;</li>
+          <li class="x-small">font-size: x-small;</li>
+          <li class="small">font-size: small;</li>
+          <li class="medium">font-size: medium;</li>
+          <li class="large">font-size: large;</li>
+          <li class="x-large">font-size: x-large;</li>
+          <li class="xx-large">font-size: xx-large;</li>
+        </ul>
+      </div>
+      <p>
+        Although most browsers support these keywords, the exact sizes will
+        differ. They are a fairly crude method of font sizing and are generally
+        avoided by most developers.
+      </p>
+
+      <div class="container5">
+        <h3>
+          <i class="fa-solid fa-text-height"></i> Absolute Font Sizing Keywords
+        </h3>
+        <p>
+          Two relative font-sizing keywords are available. The font is sized
+          according to its parent element: <br />
+          font-size: smaller; font-size: larger; For example, if the parent has
+          a font size of ‘medium’, a value of ‘larger’ will set the element to
+          ‘large’. Other font units are normally altered by a factor of around
+          1.2 but, again, there is no standard and browser results will differ.
+        </p>
+      </div>
+
+      <div class="container6">
+        <h3><i class="fa-solid fa-ruler"></i> Absolute Lengths</h3>
+        <p>The font-size property can be assigned an absolute length:</p>
+      </div>
+
+      <div class="container4">
+        <ul>
+          <li>mm : millimeters, e.g. 10mm.</li>
+          <li>cm : centimeters, e.g. 1cm ( = 10mm).</li>
+          <li>in : inches, e.g. 0.39in ( ~= 10mm).</li>
+          <li>
+            pt : point, where 1pt is generally assumed to be 1/72 inch e.g.
+            12pt.
+          </li>
+          <li>pc : pica, where 1pc is 12pt.</li>
+          <li>px : pixel, e.g. 14px.</li>
+        </ul>
+      </div>
+      <p>
+        In general, there are issues with all these measurement units.
+        Millimeters, centimeters and inches are inaccurate for a screen-based
+        medium. Points and picas are unreliable since systems can use different
+        dpi settings. Pixel appears to be the most suitable, but it can lead to
+        accessibility issues because the text cannot be resized in IE.
+      </p>
+
+      <div class="container7">
+        <h3><i class="fa-solid fa-registered"></i> Relative Lengths</h3>
+        <p>
+          The font-size property can be assigned a unit that it relative to its
+          parent’s font size:
+        </p>
+      </div>
+      <div class="container4">
+        <ul>
+          <li>
+            em : 1em is equivalent to the current font size, so 2em is twice as
+            large.
+          </li>
+          <li>
+            % : 100% is equivalent to the current font size, so 200% is twice as
+            large.
+          </li>
+          <li>
+            ex : 1ex is equivalent to the height of the letter ‘x’ in the
+            current font.
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <p>
+          Few developers use ‘ex’, but it can be useful in some situations where
+          you need fine-grained font sizes, e.g. 1ex rather than 0.525em.
+          Percentage and ’em’ sizes are equivalent, e.g. 50% = 0.5em, 100% =
+          1em, 120% = 1.2em, etc. Some browsers exhibit subtle differences but
+          it’s rarely a major problem. If you want to save every byte, you could
+          choose the shortest definition, i.e. 50% is shorter than 0.5em and 1em
+          is shorter than 100%.
+        </p>
+        <a
+          href="https://www.sitepoint.com/css-font-sizing-tutorial/#h-frequently-asked-questions-faqs-on-css-font-sizing"
+          class="source-btn"
+          >Source <i class="fa-solid fa-arrow-up-right-from-square"></i
+        ></a>
+      </div>
+
+      <h2><i class="fa-solid fa-ranking-star"></i> 20 Best Google Web Fonts</h2>
+      <div class="container8">
+        Top recommended Google Web Fonts Here you can find a selection of fonts
+        we’ve chosen, in part due to their aesthetic qualities, but above all,
+        their functionality. As well as families with many styles and weights,
+        you’ll find fonts that are optimized for interfaces, UI Optimized web
+        fonts, and others that are especially legible in paragraphs, or
+        particularly comfortable for reading on mobile and legible on any device
+        - be it smartphone, desktop or tablet. To discover more examples of free
+        fonts, take a look at our collection of Free Fonts, containing a wide
+        variety of free typefaces.
+      </div>
+
+      <div class="content2">
+        <div class="card">
+          <h5>Open Sans - Google Font by Google Fonts</h5>
+          <img src="images/font1.png" alt="" />
+        </div>
+        <div class="card">
+          <h5>Oxygen - Google Font by Google Fonts</h5>
+          <img src="images/font2.png" alt="" />
+        </div>
+        <div class="card">
+          <h5>Raleway - Google Font by Google Fonts</h5>
+          <img src="images/font3.png" alt="" />
+        </div>
+        <div class="card">
+          <h5>Poppins - Google Font by Google Fonts</h5>
+          <img src="images/font4.png" alt="" />
+        </div>
+        <div class="card">
+          <h5>Anton - Google Font by Google Fonts</h5>
+          <img src="images/font5.png" alt="" />
+        </div>
+        <div class="card">
+          <h5>Lato - Google Font by Google Fonts</h5>
+          <img src="images/font6.png" alt="" />
+        </div>
+        <a
+          href="https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html"
+          class="source-btn"
+          >More detail <i class="fa-solid fa-arrow-up-right-from-square"></i
+        ></a>
+      </div>
+
+      <div class="content3">
+        <p>
+          แหล่งที่มา:
+          <a
+            href="https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html"
+            target="_blank"
+          >
+            Awwwards – 20 Best Web Fonts from Google Web Fonts & Font Face
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p class="footer2">
+        &copy; 2026 นายภานุวัฒน์ วาตรีบุญเรือง 683380050-0 IT Sec1
+      </p>
+    </div>
+  </body>
+</html>
